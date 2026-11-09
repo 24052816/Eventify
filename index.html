@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventify - Discover Amazing Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Eventify<span>.</span></a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Explore Events</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="themeToggle">🌙</button>
+                <a href="#events" class="nav-btn">Find Events</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="hero-tag">✨ CREATE MEMORIES THAT LAST</p>
+
+            <h1>
+                Discover Events.<br>
+                Experience <span>Something Amazing.</span>
+            </h1>
+
+            <p class="hero-description">
+                Explore exciting events, connect with people
+                and create unforgettable experiences.
+            </p>
+
+            <a href="#events" class="hero-btn">
+                Explore Events →
+            </a>
+
+            <div class="hero-stats">
+                <div>
+                    <h3>50+</h3>
+                    <p>Events</p>
+                </div>
+                <div>
+                    <h3>10K+</h3>
+                    <p>Participants</p>
+                </div>
+                <div>
+                    <h3>20+</h3>
+                    <p>Organizers</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1506157786151-b8491531f063?w=900"
+                alt="Live music event">
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events-section" id="events">
+
+        <div class="section-heading">
+            <p>DISCOVER YOUR NEXT EXPERIENCE</p>
+            <h2>Upcoming Events</h2>
+            <span>Find the perfect event for you.</span>
+        </div>
+
+        <!-- Search and Filter -->
+        <div class="event-controls">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for events...">
+
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="Music">Music</option>
+                <option value="Technology">Technology</option>
+                <option value="Education">Education</option>
+                <option value="Sports">Sports</option>
+            </select>
+        </div>
+
+        <!-- Event Cards -->
+        <div class="event-container" id="eventContainer">
+            <!-- JavaScript will display event cards here -->
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <p>ABOUT EVENTIFY</p>
+        <h2>Making Every Event Special</h2>
+        <span>
+            Eventify helps people discover, explore and register
+            for exciting events in one place.
+        </span>
+    </section>
+
+    <!-- Registration Modal -->
+    <div class="modal" id="registrationModal">
+        <div class="modal-content">
+
+            <button class="close-btn" id="closeModal">&times;</button>
+
+            <h2>Event Registration</h2>
+            <p>Fill in your details to reserve your spot.</p>
+
+            <form id="registrationForm">
+
+                <input
+                    type="text"
+                    id="participantName"
+                    placeholder="Your Full Name"
+                    required>
+
+                <input
+                    type="email"
+                    id="participantEmail"
+                    placeholder="Your Email Address"
+                    required>
+
+                <input
+                    type="tel"
+                    id="participantPhone"
+                    placeholder="Your Phone Number"
+                    required>
+
+                <input
+                    type="hidden"
+                    id="selectedEvent">
+
+                <button type="submit" class="submit-btn">
+                    Register Now
+                </button>
+
+            </form>
+
+            <p id="confirmationMessage"></p>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Eventify<span>.</span></h2>
+        <p>Discover. Connect. Experience.</p>
+        <p>© 2026 Eventify. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
